@@ -8,7 +8,7 @@ h1 {
     justify-content: center;
 }
 
-h3 {
+h2 {
     display: flex;
     justify-content: center;
     margin: 2% 0% 2% 0%
@@ -22,7 +22,7 @@ h3 {
 
 #emergencyNumbers {
     width: 100%;
-    height: 10%;
+    height: 5%;
     bottom: 0;
     background-color: #08605F;
     position: fixed;
@@ -30,4 +30,25 @@ h3 {
     flex-direction: column;
     justify-items: center;
     text-align: center;
+}
+
+#headerActus {
+    margin-top: 3%;
+}
+
+#actu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#actu div {
+    border: 1px solid black;
+    margin: 0% 3% 0% 3%;
+    padding: 2%;
 }
