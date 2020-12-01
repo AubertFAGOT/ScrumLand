@@ -19,3 +19,15 @@ h3 {
     justify-content: center;
     margin: 0% 10% 0% 10%;
 }
+
+#emergencyNumbers {
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: #08605F;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
