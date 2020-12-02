@@ -17,7 +17,12 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background:#f8f8f8;
+  background:#ffffff;
+}
+
+#sidenav {
+  margin: -150px 0 0 0;
+  background-color: #F9F9F9;
 }
 
 .container {

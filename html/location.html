@@ -1,10 +1,9 @@
 <html>
-<header>
+<head>
     <title>location</title>
     <link href="..\style\location.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../style/sidenav.css" />
-    <link href="..\style\sidenav.css" rel="stylesheet" />
-</header>
+</head>
 
 <body>
     <div id="tabs">
@@ -20,46 +19,44 @@
             <li><a href="mentions_legales.html">Mentions légales</a></li>
             <li><a href="association.html">Association</a></li>
             <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="../anglais/index.html">Anglais</a></li>
+
+            
+
         </ul>
     </div>
-    <div class="container">
-        <form id="location" action="javascript:sendMail()" name="envoi">
-            <h3>Location de salles communales</h3>
-            <h4>Veuillez remplir ce formulaire</h4>
-            <fieldset>
-                <select name = "listeLocation" id ="listeLocation" tabindex="1" required>  
-                    <option value="" selected>-- Choisir une salle --</option>
-                    <option value="salle1">Jeanne D'Arc</option>
-                    <option value="salle2">Elizabeth Bathory</option>
-                    <option value="salle3">Arthur Pendragon</option>
-                    <option value="salle4">Nikola Tesla</option>
-                </select>
-            </fieldset>
-            
-            <fieldset>
-                <input id="A2" placeholder="Email Address" type="email" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input id="A3" placeholder="numero de telephone (optional)" type="tel" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-                <textarea id="A4" placeholder="ton message" tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit">Envoyer</button>
-            </fieldset>
-        </form>
-        <script language="Javascript" type="text/javascript">
-            function sendMail() {
-                var url = "mailto:mailto:wossynogir-0209@yopmail.com?subject=Fomulaire&body=" 
-                    + encodeURIComponent(document.getElementById("listeLocation").value);
-                    + encodeURIComponent(document.getElementById("A2").value);
-                    + encodeURIComponent(document.getElementById("A3").value);
-                    + encodeURIComponent(document.getElementById("A4").value);
-                    document.location=url;
-            }
-        </script>
+    <div id="content">
+        <div class="container">
+            <form id="location" action="javascript:sendMail()" name="envoi">
+                <div id="form">
+                    <h3>Location de salles communales</h3>
+                    <h4>Veuillez remplir ce formulaire</h4>
+                    <fieldset>
+                        <select name = "listeLocation" id ="listeLocation" tabindex="1" required>  
+                            <option value="" selected>-- Choisir une salle --</option>
+                            <option value="salle1">Jeanne D'Arc</option>
+                            <option value="salle2">Elizabeth Bathory</option>
+                            <option value="salle3">Arthur Pendragon</option>
+                            <option value="salle4">Nikola Tesla</option>
+                        </select>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <input id="A2" placeholder="Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input id="A3" placeholder="numero de telephone (optional)" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea id="A4" placeholder="ton message" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit">Envoyer</button>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
