@@ -1,14 +1,9 @@
 <html>
 <header>
     <title>contact</title>
-    <link href="..\style\contact.css"
-        rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="../style/sidenav.css" />
-</header>
-
-<body>
-
-    <div id="tabs">
+    <link href="..\style\contact.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../style/sidenav.css" />
+    <nav id="tabs">
         <ul id="sidenav">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="Activites.html">Activités</a></li>
@@ -17,15 +12,17 @@
             <li><a href="listelu.html">Élus</a></li>
             <li><a href="bulletin.html">Bulletins municipaux</a></li>
         </ul>
-    </div>
+    </nav>
+</header>
 
+<body>
     <div id="content">
         <div class="container">
             <form id="contact" action="javascript:sendMail()" name="envoi">
                 <h3>Contact</h3>
                 <h4>conctat la mairie ici</h4>
                 <fieldset>
-                    <input id="A1"placeholder="nom" type="text" tabindex="1" required autofocus>
+                    <input id="A1" placeholder="nom" type="text" tabindex="1" required autofocus>
                 </fieldset>
                 <fieldset>
                     <input id="A2" placeholder="Email Address" type="email" tabindex="2" required>
@@ -42,19 +39,18 @@
             </form>
             <script language="Javascript" type="text/javascript">
                 function sendMail() {
-                    var url = "mailto:mailto:wossynogir-0209@yopmail.com?subject=Fomulaire&body=" 
+                    var url = "mailto:mailto:wossynogir-0209@yopmail.com?subject=Fomulaire&body="
                         + encodeURIComponent(document.getElementById("A1").value);
-                        + encodeURIComponent(document.getElementById("A2").value);
-                        + encodeURIComponent(document.getElementById("A3").value);
-                        + encodeURIComponent(document.getElementById("A4").value);
-                        document.location=url;
+                    + encodeURIComponent(document.getElementById("A2").value);
+                    + encodeURIComponent(document.getElementById("A3").value);
+                    + encodeURIComponent(document.getElementById("A4").value);
+                    document.location = url;
                 }
             </script>
         </div>
     </div>
-    
+
 </body>
 
-</script>
 
 </html>
