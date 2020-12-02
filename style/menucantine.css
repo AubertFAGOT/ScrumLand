@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.lundi {
+    text-align: left;
+    margin-left: 200px;
+}
+
+.mardi {
+    text-align: left;
+    margin-left: 500px;
+}
+
+.jeudi {
+    text-align: left;
+    margin-left: 800px;
+}
+
+.vendredi {
+    text-align: left;
+    margin-left: 1200px;
+}
