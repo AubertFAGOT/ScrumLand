@@ -22,14 +22,11 @@ h2 {
 
 #emergencyNumbers {
     width: 100%;
-    height: 5%;
     bottom: 0;
     background-color: #08605F;
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
     text-align: center;
+    padding: 1%;
 }
 
 #headerActus {
