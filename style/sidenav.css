@@ -1,0 +1,68 @@
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/Quicksand_Book.otf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: quicksand;
+}
+
+p, li {
+    font-size: large;    
+}
+
+body, html {
+    height: 100%;
+}
+
+#tabs {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+#tabs li {
+    height: 8%;
+    text-align: center;
+}
+
+#tabs a {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#tabs a:hover {
+    background-color: #177e89;
+    color: black;
+}
+
+#tabs a:visited, #tabs a:focus, #tabs a:active {
+    color: black;
+}
+
+#sidenav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    margin-left: 15%;
+    width: 85%;
+    height: 100%;
+}
+
+#content h1 {
+    text-align: center;
+}
